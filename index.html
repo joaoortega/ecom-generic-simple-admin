@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ExpressLab - Sistema de E-commerce</title>
+</head>
+<body>
+
+<header>
+    <h1>ExpressLab</h1>
+    <h2>Sistema de Gerenciamento de Dados</h2>
+</header>
+
+<main>
+    <div class="container">
+        <section>
+            <div class="box">
+                <h3>Sistema de Cadastro</h3>
+                <p>Que tipo de registro deseja fazer?</p>
+                <div class="insertMenu">
+                    <button onclick="showProductForm()">
+                        Produto
+                    </button>
+                    <button onclick="showCustomerForm()">
+                        Cliente
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-box">
+            <div>
+                <form id="formInsertProduct">
+                    <label for="sku">SKU</label>
+                    <input type="text" id="sku" required>
+                    <label for="prodname">Nome do Produto</label>
+                    <input type="text" id="prodname" required>
+                    <label for="brand">Marca</label>
+                    <input type="text" id="brand" required>
+                    <label for="size">Tamanho</label>
+                    <input type="text" id="size">
+                    <label for="number">Quantidade em Estoque</label>
+                    <input type="number" id="stock" required>
+                    <input type="submit" class="button" value="CADASTRAR">
+                </form>
+            </div>
+            <div>
+                <form id="formInsertCustomer">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" required>
+                    <label for="email">E-mail</email>
+                    <input type="email" id="email" required>
+                    <label for="phone">Telefone</label>
+                    <input type="text" id="phone" placeholder="(xx) xxxxx-xxxx" required>
+                    <label for="address">Endereço</label>
+                    <input type="text" id="address" required>
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" placeholder="xxx.xxx.xxx-xx" required>
+                    <input type="submit" class="button" value="CADASTRAR">
+                </form>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+</body>
+<script src="script/script.js"></script>
+</html>
